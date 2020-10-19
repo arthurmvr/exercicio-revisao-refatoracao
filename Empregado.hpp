@@ -20,7 +20,7 @@ class Empregado {
       }
 	  return t * salarioHora;
     }
-    virtual void Imprimir();
+    virtual void Imprimir(double horasTrabalhadas);
   protected:
     double salarioHora;  
     double quotaMensalVendas; 	
