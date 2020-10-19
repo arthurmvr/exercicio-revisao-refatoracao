@@ -7,10 +7,7 @@
 class Empregado {
 	
   public:
-    const int HORA = 8;
-    double salarioHora;  
-    double quotaMensalVendas;  
-
+    const int HORA = 8; 
 
     double pagamentoMes(double horasTrabalhadas) {
  
@@ -23,8 +20,10 @@ class Empregado {
       }
 	  return t * salarioHora;
     }
-	void Imprimir()
-		
+    virtual void Imprimir();
+  protected:
+    double salarioHora;  
+    double quotaMensalVendas; 	
 	
 };
 
