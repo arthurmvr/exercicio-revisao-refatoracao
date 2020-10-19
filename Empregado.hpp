@@ -23,6 +23,8 @@ class Empregado {
       }
 	  return t * salarioHora;
     }
+	void Imprimir()
+		
 	
 };
 
