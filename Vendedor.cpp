@@ -4,10 +4,11 @@
 class Vendedor : public Empregado {
 
   public:
+    const int MESES = 12;
     std::string nome;  	  
 	
 	double quotaTotalAnual() {
-	  return quotaMensalVendas * 12;
+	  return quotaMensalVendas * MESES;
 	}
 	
 };
