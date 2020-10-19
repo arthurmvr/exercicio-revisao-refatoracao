@@ -7,6 +7,7 @@
 class Empregado {
 	
   public:
+    const int HORA = 8;
     double salarioHora;  
     double quotaMensalVendas;  
 
@@ -16,8 +17,8 @@ class Empregado {
       double t = horasTrabalhadas;
 	  
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-      if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
+      if (horasTrabalhadas > HORA) {
+        double x = horasTrabalhadas - HORA;
         t += x / 2;
       }
 	  return t * salarioHora;
