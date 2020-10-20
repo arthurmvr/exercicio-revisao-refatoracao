@@ -4,27 +4,28 @@
 #include <iostream>
 #include <string>
 
+const int HORA = 8;
+
 class Empregado {
-	
+
   public:
-    const int HORA = 8; 
 
     double pagamentoMes(double horasTrabalhadas) {
- 
-      double t = horasTrabalhadas;
-	  
+
+      double horasRemuneradas = horasTrabalhadas;
+
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
       if (horasTrabalhadas > HORA) {
-        double x = horasTrabalhadas - HORA;
-        t += x / 2;
+        double horasExtra = horasTrabalhadas - HORA;
+        horasRemuneradas += horasExtra / 2;
       }
-	  return t * salarioHora;
+	  return horasRemuneradas * salarioHora;
     }
-    virtual void Imprimir(double horasTrabalhadas);
+
   protected:
-    double salarioHora;  
-    double quotaMensalVendas; 	
-	
+    double salarioHora;
+    double quotaMensalVendas;
+
 };
 
 #endif
